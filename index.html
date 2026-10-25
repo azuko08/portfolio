@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Oi&display=swap" rel="stylesheet">
+
+    <title>lulye</title>
+</head>
+
+<body>
+
+    <!-- Tout votre HTML doit se trouver après cette ligne -->
+    <!--<div id="mouse">  </div>-->
+    <div id="outline">
+
+        <div class="header">
+            <h1 class="font1">Portfolio</h1>
+            <div class="contact">
+                <a href="Contact.html" class="textdeco" id="cblanc">Me contacter</a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="deroulant">
+                        <a href="#"></a>
+                        <ul class="sous">
+                            <li><a href="#s1">Section1</a></li>
+                            <li><a href="#s2">Section 2</a></li>
+                            <li><a href="#s3">Section 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section" id="s1">
+            <audio src="audio/rg1.mp3" autoplay loop ></audio>
+            <video id="vid1" autoplay="true" loop muted>
+                <source src="images/movieout.1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="intersect1" >
+            <h1></h1>
+        </div>
+        <div class="section2" id="s2">
+            <div class="bulletexte" id="blanc">
+                <h3 class="font1">Mes projets personnels</h3>
+                <p  id="padbot"> Sur Touchdesigner</p>
+                <a href="#s3" class="textdeco" id="blanc"> Voir projets Ecole</a>
+            </div>
+            <div class="container">
+                <div class="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="slide">
+
+                            <video class="vidreduce" src="images/movieout.3.mp4" loop autoplay
+                                alt="Image 1">
+                        </div>
+
+                        <div class="slide">
+
+                            <video src="images/movieout1.mp4" autoplay loop muted
+                                alt="Image 2">
+                        </div>
+
+                        <div class="slide">
+
+                            <video src="images/movieout.2.mp4" loop autoplay
+                                alt="Image 3">
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-controls">
+
+                        <button id="prev"  class="carousel-control-color"> ◀ </button>
+
+                        <button id="next"  class="carousel-control-color"> ▶ </button>
+                    </div>
+
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section3" id="s3">
+
+            <div class="projet">
+                <div class="bulletexte-section-3">
+                    <h3 class="font1">Blender</h4>
+                    <p>Projet 3D réalisé sur Blender avec en référence un mecha en lego</p>
+                </div>
+
+                <img src="images/PAULGABORIEAU_Blender_Rendered.png"
+                    alt="Rendu réalisé sur Blender"
+                    class="image-projet">
+            </div>
+
+            <div class="projet inverse">
+
+                <div class="bulletexte-section-3">
+
+                    <h3 class="font1">Photo</h4>
+                    <p>Projet photo sur le thème de la Série Euphoria</p>
+
+                </div>
+
+                <img src="images/DSC07925.jpg"
+                    alt="projet photo1"
+                    class="image-projet">
+
+                <img src="images/DSC07772.jpg"
+                alt="projet photo2"
+                class="image-projet">
+                
+            </div>
+
+            <div class="projet">
+
+                <div class="bulletexte-section-3">
+
+                    <h3 class="font1">Jeu de société</h3>
+                    <p>Concept du jeu sur tabletopia</p>
+
+                </div>
+                
+                <img src="images/jeusociété.png" 
+                alt="jeu de société1"
+                class="image-projet">
+
+            </div>
+
+            <div class="projet inverse">
+
+                <div class="bulletexte-section-3">
+
+                    <h3 class="font1"> Adobe</h3>
+                    <p>Indesign, Photoshop, Illustrator</p>
+
+                </div>
+
+                <img src="images/indd rendu.png"
+                alt="projet adobe"
+                class="image-projet">
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="footer-titre">
+                <h5 class="font1">Portfolio</h5>
+            </div>
+
+            <div class="footer-reseaux">
+
+                <a href="Contact.html" class="footer-contact textdeco">
+                    <p id="blanc">Envoyer un message</p>
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/insta.png"
+                        alt="Instagram"
+                        class="image-footer instafooter">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="images/tiktok.png"
+                    alt="Tiktok"
+                    class="image-footer tiktokfooter">
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="gooey-wrapper">
+
+        <div class="content-text">
+
+        </div>
+        <svg id="svg1">
+            <defs>
+                <filter id="goo">
+
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur"></feGaussianBlur>
+
+                    <feColorMatrix in="blur" mode="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -10" result="goo">
+
+                    </feColorMatrix>
+
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="cursor-container" id="cursor-container">
+
+        </div>
+
+    </div>
+    <!-- Ne rien écrire ni modifier en dessous de cette ligne -->
+    <script src="javascript.js"></script>
+</body>
+
+</html>
+
+<!-- ecouter ev submit js pour formulaire-->

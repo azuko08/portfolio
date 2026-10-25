@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Oi&display=swap" rel="stylesheet">
+
+
+    <title>Me Contacter</title>
+</head>
+<body>
+    <div class="header" id="font1">
+        <div class="retour">
+
+            <a class="C1" id="textd" href="index.html">
+                Retour
+            </a>
+            
+        </div>
+    </div>
+    <div class="section0">
+        <video id="vid1" autoplay="true" loop muted>
+            <source src="images/movieout.1.mp4" type="video/mp4">
+        </video>
+        <div class="page">
+            <div class="Inputbackground">
+                <div class="InputContainer">
+                    <!-- Formulaire Contact -->
+                    <form class="contact-form" action="" novalidate="true">
+
+                        <input id="name-input" type="text" placeholder="Nom" required>
+                        <p class="nameempty hidden">Veuillez indiquez votre nom. </p>  
+
+                        <input id="email-input" placeholder="E-mail : exemple@mail.truc" required>
+                        <p class="emailempty hidden">Veuillez indiquez votre E-mail.</p>
+
+                        <textarea id="message-input" placeholder="Message" required></textarea>        
+                        <p class="messageempty hidden"> Veuillez indiquez votre message.</p>
+
+                        <input id="button-submit" type="submit" value="Envoyer">
+                        <div class="formSuccessContainer hidden">
+                            <p class="formSuccess hidden" id="font1">Message bien envoyé !</p>
+                        </div>
+                        <!-- ajouter novalidate a form-->
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="footer-titre">
+            <a href="index.html" id="textd" class="C2">
+                <h5 id="font1">Portfolio</h5>
+            </a>
+        </div>
+
+        <div class="footer-reseaux">
+
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/insta.png"
+                    alt="Instagram"
+                    class="image-footer instafooter">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="images/tiktok.png"
+                alt="Tiktok"
+                class="image-footer tiktokfooter">
+            </a>
+
+        </div>
+    </div>
+    <div class="gooey-wrapper">
+
+    <div class="content-text">
+
+    </div>
+    <svg id="svg1">
+        <defs>
+            <filter id="goo">
+
+                <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur"></feGaussianBlur>
+
+                <feColorMatrix in="blur" mode="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -10" result="goo">
+
+                </feColorMatrix>
+
+                <feBlend in="SourceGraphic" in2="goo"></feBlend>
+
+            </filter>
+        </defs>
+    </svg>
+
+    <div class="cursor-container" id="cursor-container">
+
+    </div>
+
+</div>
+<script src="javascript2.js"></script>
+</body>
+
+
+</html> 
